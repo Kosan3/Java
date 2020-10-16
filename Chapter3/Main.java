@@ -1,11 +1,15 @@
 public class Main {
   public static void main(String[] args) {
-    boolean tenki = false;
-    if (tenki) {
-      System.out.println("洗濯をします");
-      System.out.println("散歩にいきます");
+    int height = 169;
+    int weight = 59;
+    if (height >= 170) {
+      if (weight <= 68) {
+        System.out.println("合格です。");
+      } else {
+        System.out.println("不合格です。");
+      }
     } else {
-      System.out.println("DVDを見ます");
+      System.out.println("不合格です。");
     }
   }
 }
