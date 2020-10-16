@@ -1,15 +1,17 @@
 public class Main {
   public static void main(String[] args) {
-    int height = 169;
-    int weight = 59;
-    if (height >= 170) {
-      if (weight <= 68) {
-        System.out.println("合格です。");
+    System.out.println("数字あてゲーム");
+    int ans = new java.util.Random().nextInt(10);
+    for (int i = 0; i < 5; i++) {
+      System.out.println("画面に「０～９の数字を入力してください」");
+      int num = new java.util.Scanner(System.in).nextInt();
+      if (num == ans) {
+        System.out.println("アタリ！");
+        break;
       } else {
-        System.out.println("不合格です。");
+        System.out.println("違います");
       }
-    } else {
-      System.out.println("不合格です。");
     }
+    System.out.println("ゲームを終了します。");
   }
 }
