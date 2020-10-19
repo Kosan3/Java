@@ -1,14 +1,29 @@
 public class Main {
   public static void main(String[] args) {
-    int[] numbers = {3, 4, 9};
-    System.out.println("１桁の数字を入力してください");
-    int input = new java.util.Scanner(System.in).nextInt();
-    boolean flag = false;
-    for (int number : numbers) {
-      if (number == input) {
-        flag = true;
+    int[] arrayD = {12, 25, 36, 20, 30, 8, 42};
+    int[] arrayH = new int[11];
+    for (int i = 0; i < arrayD.length; i++) {
+      int k = arrayD[i] % 11;
+      for (; ; k = (k+1) % arrayH.length) {
+        if (arrayH[k] == 0) {
+          arrayH[k] = arrayD[i];
+          break;
+        }
       }
     }
-    System.out.println(flag == true ? "アタリ！" : "ハズレ！");
+    System.out.print("検索番号は？：");
+    int x = new java.util.Scanner(System.in).nextInt();
+    int k = x % arrayH.length;
+    for (; ; k = (k + 1) % arrayH.length) {
+      if (arrayH[k] != 0) {
+        if (arrayH[k] == x) {
+          System.out.println(k + 1 + "番目の要素です");
+          break;
+        }
+      } else {
+        System.out.println("該当なし");
+        break;
+      }
+    }
   }
 }
