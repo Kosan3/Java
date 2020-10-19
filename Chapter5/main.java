@@ -1,10 +1,15 @@
 public class Main {
-  public static void main(String[] args) {
-    System.out.println("あああ");
-    hello("やすし");
-    System.out.println("いいい");
+  public static void incArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+      array[i]++;
+    }
   }
-  public static void hello(String name) {
-    System.out.println("こんにちは" + name + "さん");
+  public static void main(String[] args) {
+    int[] array = {1, 2, 3};
+    incArray(array);
+    for (int i : array) {
+      System.out.println(i);
+    }
+    System.out.println(args[0]+ args[1]);
   }
 }
