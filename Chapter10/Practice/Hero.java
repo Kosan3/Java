@@ -1,4 +1,4 @@
 public class Hero {
-  String name = "わし";
-  int hp = 100;
+  String name = "勇者";
+  int hp = 30;
 }

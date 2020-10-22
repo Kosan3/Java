@@ -16,5 +16,4 @@ public class Hero {
     this.name = name;
     this.hp = hp;
   }
-
 }

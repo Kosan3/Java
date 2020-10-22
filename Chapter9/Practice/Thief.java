@@ -2,16 +2,15 @@ public class Thief {
   String name;
   int hp;
   int mp;
-  public Thief(String name, int mp, int hp) {
-    
+  public Thief(String name, int hp, int mp) {
+    this.name = name;
     this.hp = hp;
     this.mp = mp;
-    this.name = name;
   }
   public Thief(String name, int hp) {
-    this(name, hp, 9);
+    this(name, hp, 5);
   }
   public Thief(String name) {
-    this(name, 10);
+    this(name, 25);
   }
 }

@@ -5,11 +5,11 @@ public class Hero {
   public void attack() {
     System.out.println(this.name + "は" + this.sword.name + "で攻撃した！");
   }
-  public Hero(String name, int hp) {
-    this.hp = hp;
+  public Hero(String name) {
+    this.hp = 100;
     this.name = name;
   }
   public Hero() {
-    this("ダミー", 333);
+    this("名無し");
   }
 }

@@ -1,5 +1,6 @@
 public class SuperHero extends Hero {
   boolean flying;
+
   public void fly() {
     this.flying = true;
     System.out.println("飛び上がった！");
@@ -8,12 +9,14 @@ public class SuperHero extends Hero {
     this.flying = false;
     System.out.println("着地した！");
   }
-
-  public void run() {
-    System.out.println(this.name + "は撤退した");
+  public void attack(Matango m) {
+    super.attack(m);
+    if (this.flying) {
+      super.attack(m);
+    }
   }
 
-  public SuperHero(String name) {
-    super(name, 20);
+  public SuperHero(String name, int hp) {
+    super(name, hp);
   }
 }
