@@ -1,6 +1,6 @@
 public class Quick {
   public static void main(String[] args) {
-    int[] array = {5,4,7,6,8,3,1,2,9};
+    int[] array = {2,6,3,756,3,23,97,5,22,12};
     int left = 0;
     int right = array.length - 1;
     for (int a : quickSort(array, left, right)) {
@@ -9,6 +9,8 @@ public class Quick {
   }
 
   public static int[] quickSort(int[] array, int left, int right) {
+    // left = 0;
+    // right = 8;
     int k = right;
     int w;
     for (int i = left + 1; i < k;) {
@@ -20,9 +22,12 @@ public class Quick {
         array[k] = w;
       }
     }
-    w = array[left];
-    array[left] = array[k];
-    array[k] = w;
+    if (array[left] > array[k]) {
+      w = array[left];
+      array[left] = array[k];
+      array[k] = w;
+    }
+
     if (left < k-1) {
       quickSort(array, left, k-1);
     };
