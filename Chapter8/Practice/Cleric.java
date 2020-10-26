@@ -2,9 +2,9 @@ import java.util.Random;
 
 public class Cleric {
   int hp = 50;
-  final int MAX_HP = 50;
+  public final int MAX_HP = 50;
   int mp = 10;
-  final int MAX_MP = 10;
+  public final int MAX_MP = 10;
 
   public void selfAId() {
     System.out.println("セルフエイドを発動");
