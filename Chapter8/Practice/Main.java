@@ -5,5 +5,6 @@ public class Main {
     c.pray(1);
     c.pray(1);
     c.pray(1);
+    System.out.println(Cleric.MAX_HP);
   }
 }
