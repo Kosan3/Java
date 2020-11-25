@@ -4,8 +4,8 @@ public class IntArray {
     a[1] = 10;
     a[2] = 30;
     a[4] = 40;
-    for (int i = 0; i < a.length; i++) {
-      System.out.println("a["+i+"] = "+a[i]);
+    for (int i : a) {
+      System.out.println(i);
     }
   }
 }
