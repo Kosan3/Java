@@ -2,11 +2,10 @@ import java.util.Scanner;
 
 public class Test {
   public static void main(String[] args) {
-    Scanner stdIn = new Scanner(System.in);
-    boolean a = stdIn.nextBoolean();
-    boolean b = stdIn.nextBoolean();
-    boolean c = stdIn.nextBoolean();
-    System.out.println();
-    System.out.println(a && b || c);
+    int a = -4;
+    int b = -3;
+    int c = -a;
+    System.out.println(a+b);
+    System.out.println(c);
   }
 }
